@@ -1,0 +1,24 @@
+{
+    "name": "sifo/sifo-standard-edition",
+    "description": "Standard APP using SIFO Framework",
+    "license": "Apache-2.0",
+    "keywords": [],
+    "homepage": "https://github.com/sifophp/SIFO",
+    "type": "project",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/sifophp/sifo"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/sifophp/sifo-common-instance"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "sifophp/sifo": "*",
+        "sifophp/sifo-common-instance": "*"
+    },
+    "minimum-stability": "dev"
+}
