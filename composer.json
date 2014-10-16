@@ -1,9 +1,9 @@
 {
-    "name": "sifo/sifo-standard-edition",
-    "description": "Standard APP using SIFO Framework",
+    "name": "sifo/sifo-app",
+    "description": "The default sifo application using the SIFO framework",
     "license": "Apache-2.0",
     "keywords": [],
-    "homepage": "https://github.com/sifophp/SIFO",
+    "homepage": "https://github.com/sifophp/sifo-app",
     "type": "project",
     "repositories": [
         {
@@ -13,12 +13,17 @@
         {
             "type": "vcs",
             "url": "https://github.com/sifophp/sifo-common-instance"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/sifophp/sifo-instance-installer.git"
         }
     ],
     "require": {
         "php": ">=5.3.2",
         "sifophp/sifo": "*",
-        "sifophp/sifo-common-instance": "*"
+        "sifophp/sifo-common-instance": "*",
+        "sifophp/sifo-instance-installer": "~0.3.0"
     },
     "minimum-stability": "dev"
 }
