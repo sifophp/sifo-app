@@ -21,7 +21,7 @@
         {
             "type": "vcs",
             "url": "https://github.com/sifophp/sifoweb.git"
-        },
+        }
     ],
     "require": {
         "php": ">=5.3.2",
