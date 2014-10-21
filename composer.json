@@ -17,13 +17,18 @@
         {
             "type": "vcs",
             "url": "https://github.com/sifophp/sifo-instance-installer.git"
-        }
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/sifophp/sifoweb.git"
+        },
     ],
     "require": {
         "php": ">=5.3.2",
         "sifophp/sifo": "*",
         "sifophp/sifo-common-instance": "*",
-        "sifophp/sifo-instance-installer": "~0.3.0"
+        "sifophp/sifo-instance-installer": "~0.3.0",
+        "sifophp/sifoweb": "*"
     },
     "minimum-stability": "dev"
 }
