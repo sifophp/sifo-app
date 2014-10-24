@@ -7,10 +7,10 @@ After cloning this repo, you'll need to have **composer** installed in your syst
 	$ curl -sS https://getcomposer.org/installer | php
 	$ mv composer.phar /usr/local/bin/composer
 
-Once composer is installed then you should be able to run `composer`:
+Once composer is installed you should be able to run `composer`. Invoking the install will download all necessary packages:
 	 
 	$ composer install
 
-After this command all the dependencies should be installed (you will now see a `vendor` folder inside).
+After the command everything should be installed (you will see a `vendor` folder now).
 
-Now your application should be created in the `instances` folder.
+Your own application should be created inside the `instances` folder, see others for understanding structure.
