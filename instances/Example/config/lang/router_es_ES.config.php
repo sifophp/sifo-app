@@ -1,4 +1,4 @@
 <?php
-$config = array (
-  'rebuild' => 'regenerar',
-);
+$config = [
+    'rebuild' => 'regenerar',
+];

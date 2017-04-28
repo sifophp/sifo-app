@@ -21,23 +21,3 @@ $config["params_separator"] = ":";
 // If you change any of the characters above, remember to fit them in the expression.
 // Note: The query string "?param=value" doesn"t use this expression:
 $config["valid_path"] = "/^[a-z0-9-\/:_]+$/i";
-
-/*
- tests:
- valid_path = "(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?";
- valid_path = "/[-_.!~*'()a-zA-Z0-9;\/?:\@&=+\$,%#]+$/";
- */
-
-/*
- If you leave the PATH GENERATION untouched an example of how would look is:
- http://yourdomain.com/mammals/primates/western-gorillas:etymology
-
- By tweaking the options you can easily have one level only documents like:
- http://yourdomain.com/mammals-primates-western_gorillas/etymology
-
- Make your tests :)
- +-----------------------------------------------------------------------------+
- */
-
-
-?>
