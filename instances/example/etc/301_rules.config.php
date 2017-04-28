@@ -18,7 +18,7 @@
  * Example:
  *
  * Given the (old) address: http://www.whatdoyouwant.com?search=doggie_and_kittens
- * And the (new) address: http://doggie_and_kittens.whatdoyouwant.com 
+ * And the (new) address: http://doggie_and_kittens.whatdoyouwant.com
  * We could define this rule:
  *		$config['/www.whatdoyouwant.com\/?\?search=(.+)$/'] = '$1.whatdoyouwant.com';
  *
@@ -28,4 +28,4 @@
  */
 // ____________________________________________________________________________
 
-$config = array();
+$config = [];

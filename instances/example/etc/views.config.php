@@ -4,7 +4,6 @@
  *
  *
  * $config['VIEW_ENGINE']['PARAM_NAME'] = VALUE
- *
  */
 
 $config['smarty'] = [

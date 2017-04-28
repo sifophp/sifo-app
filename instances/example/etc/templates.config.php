@@ -1,5 +1,5 @@
 <?php
-include ROOT_PATH . '/vendor/sifophp/sifo-common-instance/config/templates.config.php';
+include ROOT_PATH . '/vendor/sifophp/sifo/etc/templates.config.php';
 
 $config['home/index.tpl'] = 'instances/example/templates/home/index.tpl';
 $config['shared/footer.tpl'] = 'instances/example/templates/shared/footer.tpl';

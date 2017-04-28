@@ -17,7 +17,11 @@
       </div>
     </div>
 
+    {$modules.header}
+
     <div class="container">
+
+      {$modules.system_messages}
 
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
@@ -45,9 +49,7 @@
         </div>
       </div>
 
-      <footer>
-        <p>Powered by Sifo, 2009-{$smarty.now|date_format:"%Y"}</p>
-      </footer>
+      {$modules.footer}
 
     </div> <!-- /container -->
 
