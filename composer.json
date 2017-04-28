@@ -1,34 +1,21 @@
 {
-    "name": "sifo/sifo-app",
-    "description": "The default sifo application using the SIFO framework",
-    "license": "Apache-2.0",
-    "keywords": [],
-    "homepage": "https://github.com/sifophp/sifo-app",
-    "type": "project",
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/sifophp/sifo"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/sifophp/sifo-common-instance"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/sifophp/sifo-instance-installer.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/sifophp/sifoweb.git"
-        }
-    ],
-    "require": {
-        "php": ">=5.3.2",
-        "sifophp/sifo": "*",
-        "sifophp/sifo-common-instance": "*",
-        "sifophp/sifo-instance-installer": "~0.3.0",
-        "sifophp/sifoweb": "*"
-    },
-    "minimum-stability": "dev"
+  "name": "sifo/sifo-app",
+  "description": "The default sifo application using the SIFO framework",
+  "license": "Apache-2.0",
+  "keywords": [],
+  "homepage": "https://github.com/sifophp/sifo-app",
+  "type": "project",
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.0",
+    "sifophp/sifo": "dev-sifo3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Example\\": "instances/example/"
+    }
+  },
+  "config": {
+    "optimize-autoloader": true
+  }
 }

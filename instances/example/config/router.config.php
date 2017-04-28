@@ -1,5 +1,7 @@
 <?php
 
+namespace Example\config;
+
 /**
  * Routes known by the application.
  *
@@ -26,32 +28,43 @@
  */
 // ____________________________________________________________________________
 // When the router doesn't know what to do with the URL, who is going to handle it?:
-$config['__NO_ROUTE_FOUND__'] = 'static/index';
+use Example\Controllers\Home\HomeController;
+use Sifo\Controller\Debug\DebugActionsController;
+use Sifo\Controller\Debug\DebugAnalyzerController;
+use Sifo\Controller\Statics\StaticsController;
+use Sifo\Controller\Tools\DumpConfigFilesController;
+use Sifo\Controller\Tools\I18N\FindI18NController;
+use Sifo\Controller\Tools\I18N\I18NActionsController;
+use Sifo\Controller\Tools\I18N\I18NRebuildController;
+use Sifo\Controller\Tools\I18N\I18NSaveController;
+use Sifo\Controller\Tools\I18N\I18NStatusController;
+use Sifo\Controller\Tools\I18N\RebuildI18NLocalController;
+use Sifo\Controller\Tools\RebuildRouterController;
+use Sifo\Controller\Tools\TemplateLauncherController;
+
+$config['__NO_ROUTE_FOUND__'] = StaticsController::class;
 
 // Controller used when no path is passed (home page).
-$config['__HOME__'] = 'home/index';
+$config['__HOME__'] = HomeController::class;
 
 // Rebuild/regenerate the configuration files:
-$config['rebuild'] = 'manager/rebuild';
-$config['findi18n'] = 'manager/findi18n';
-$config['rebuild-i18n-local'] = 'manager/rebuildi18nLocal';
-$config['rebuild-router'] = 'manager/rebuildRouter';
+$config['rebuild'] = DumpConfigFilesController::class;
+$config['findi18n'] = FindI18NController::class;
+$config['rebuild-i18n-local'] = RebuildI18NLocalController::class;
+$config['rebuild-router'] = RebuildRouterController::class;
 
 // i18n
-$config['translate'] = 'i18n/status';
-$config['translation-save'] = 'i18n/save';
-$config['translation-rebuild'] = 'i18n/rebuild';
-$config['translation-actions'] = 'i18n/actions';
+$config['translate'] = I18NStatusController::class;
+$config['translation-save'] = I18NSaveController::class;
+$config['translation-rebuild'] = I18NRebuildController::class;
+$config['translation-actions'] = I18NActionsController::class;
 
 // Sifo debug
-$config['sifo-debug-analyzer'] = 'debug/analyzer';
-$config['sifo-debug-actions'] = 'debug/actions';
-
-// Used in debug mode Mail Interception.
-$config['mail-continue'] = 'debug/mail';
+$config['sifo-debug-analyzer'] = DebugAnalyzerController::class;
+$config['sifo-debug-actions'] = DebugActionsController::class;
 
 // Template simulator
-$config['template-launcher'] = 'manager/templateLauncher';
+$config['template-launcher'] = TemplateLauncherController::class;
 
 // ____________________________________________________________________________
 // Your new routes below:

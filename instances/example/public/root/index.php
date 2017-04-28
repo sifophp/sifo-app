@@ -6,15 +6,15 @@
  */
 
 // Get the path to the root folder. ( 4 folders up from the current file):
-$root = realpath( dirname( __FILE__ ) . '/../../../..' );
+$root = realpath( dirname( __FILE__, 5 ) );
 
 // Instance name (folder under instances):
-$instance = 'example';
+$instance = basename(dirname(__FILE__, 3));
 
 // Define the root path:
 define( 'ROOT_PATH', $root );
 
-require ROOT_PATH . '/vendor/sifophp/sifo/src/sifo/Bootstrap.php';
+require ROOT_PATH . '/vendor/sifophp/sifo/src/Bootstrap.php';
 
 // Execute your instance:
 \Sifo\Bootstrap::execute( $instance );

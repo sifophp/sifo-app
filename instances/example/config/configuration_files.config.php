@@ -1,13 +1,12 @@
 <?php
 include ROOT_PATH . '/vendor/sifophp/sifo-common-instance/config/configuration_files.config.php';
+
 $config['301_rules'] = 'instances/example/config/301_rules.config.php';
 $config['cache'] = 'instances/example/config/cache.config.php';
-$config['classes'] = 'instances/example/config/classes.config.php';
 $config['css'] = 'instances/example/config/css.config.php';
 $config['db_profiles'] = 'instances/example/config/db_profiles.config.php';
 $config['debug_config'] = 'instances/example/config/debug_config.config.php';
 $config['domains'] = 'instances/example/config/domains.config.php';
-$config['forms/example.form'] = 'instances/example/config/forms/example.form.config.php';
 $config['js'] = 'instances/example/config/js.config.php';
 $config['lang/metadata_en_US'] = 'instances/example/config/lang/metadata_en_US.config.php';
 $config['lang/metadata_es_ES'] = 'instances/example/config/lang/metadata_es_ES.config.php';

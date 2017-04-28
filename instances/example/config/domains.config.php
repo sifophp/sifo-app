@@ -54,6 +54,7 @@
  */;
 
 $config['core_inheritance'] = array( 'Sifo' );
+
 // Define the inheritance of this instance (which instances are their parents:
 // $config['instance_inheritance'] = array( 'common', 'mygrandparent', 'myparent' );
 
@@ -113,3 +114,5 @@ $config['sifo.local'] = array(
 
 $config['unit.test'] = $config['sifo.local'];
 $config['unit.test']['instance'] = 'example';
+
+$config['localhost'] = $config['sifo.local'];
