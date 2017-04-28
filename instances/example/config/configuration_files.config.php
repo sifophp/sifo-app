@@ -4,7 +4,6 @@ include ROOT_PATH . '/vendor/sifophp/sifo-common-instance/config/configuration_f
 $config['301_rules'] = 'instances/example/config/301_rules.config.php';
 $config['cache'] = 'instances/example/config/cache.config.php';
 $config['db_profiles'] = 'instances/example/config/db_profiles.config.php';
-$config['debug_config'] = 'instances/example/config/debug_config.config.php';
 $config['domains'] = 'instances/example/config/domains.config.php';
 $config['lang/metadata_en_US'] = 'instances/example/config/lang/metadata_en_US.config.php';
 $config['lang/metadata_es_ES'] = 'instances/example/config/lang/metadata_es_ES.config.php';
