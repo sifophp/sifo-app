@@ -5,7 +5,7 @@
   "keywords": [],
   "homepage": "https://github.com/sifophp/sifo-app",
   "type": "project",
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "require": {
     "php": ">=7.0",
     "sifophp/sifo": "dev-sifo3"

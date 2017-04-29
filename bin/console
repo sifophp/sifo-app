@@ -1,0 +1,16 @@
+#!/usr/bin/env php
+<?php
+
+define ('ROOT_PATH', realpath(dirname(__FILE__,2)));
+require ROOT_PATH . '/vendor/sifophp/sifo/src/Bootstrap.php';
+
+use Sifo\Controller\Console\AddConsoleCommands;
+use Sifo\Config;
+use Symfony\Component\Console\Application;
+
+$application = new Application();
+
+$console_commands = new AddConsoleCommands($application);
+$console_commands->addCurrentConsoleCommands();
+
+$application->run();
