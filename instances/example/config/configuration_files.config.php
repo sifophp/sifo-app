@@ -2,6 +2,7 @@
 
 $config['301_rules'] = 'instances/example/config/301_rules.config.php';
 $config['cache'] = 'instances/example/config/cache.config.php';
+$config['classes'] = 'instances/example/config/classes.config.php';
 $config['commands'] = 'instances/example/config/commands.config.php';
 $config['db_profiles'] = 'instances/example/config/db_profiles.config.php';
 $config['domains'] = 'instances/example/config/domains.config.php';
